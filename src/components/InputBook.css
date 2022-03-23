@@ -1,20 +1,20 @@
 .textheading {
- text-align: left;
- width: 21%;
- margin: 70px auto 30px 22vw ;
+  text-align: left;
+  width: 21%;
+  margin: 70px auto 30px 22vw ;
 }
 
 .input-title {
- width: 21%;
- height: 37px;
- margin-right: 12px;
+  width: 21%;
+  height: 37px;
+  margin-right: 12px;
 }
 
 .input-submit {
- width: 10%;
- height: 42px;
- margin-right: 12px;
- border-radius: 10px;
- color: #fff;
- background-color: blue;
+  width: 10%;
+  height: 42px;
+  margin-right: 12px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: blue;
 }

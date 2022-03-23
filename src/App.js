@@ -7,7 +7,7 @@ import {
 import Books from './components/Books';
 import Categories from './components/Categories';
 import './App.css';
-// import Header from './components/Header';
+
 
 function App() {
   return (
