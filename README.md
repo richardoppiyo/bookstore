@@ -1,70 +1,78 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#BookStore
 
-## Available Scripts
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-In the project directory, you can run:
+> Bookstor is a react built app that allows users to:
+- Display a list of books.
+- Add a book.
+- Remove a selected book.
 
-### `npm start`
+<!-- ## Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![screenshot](./images/home.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![screenshot](./images/popup-small.png) -->
 
-### `npm test`
+## Built With
+- Major Languages: JAVASCRIPT, HTML, CSS
+- Major Technologies : Git, Github, Webpack, React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- npm ( Node Package Manager )
+- git and Github Account
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install linters
+- **Webhint** linter
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  `npm install --save-dev hint@6.x`
 
-### `npm run eject`
+- **Stylelint** linter
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **ESLint** linter
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  `npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Run linters
+- **Webhint** 
+linter -`npx hint .` on the root of your directory of your project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Stylelint** 
+linter - `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **ESLint** linter
+  - `npx eslint .` on the root of your directory of your project.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Run project
+- Now run the following:
+ `npm install`  - on the root directory of the project to install the required packages
+ `npm start`   - on the root directory of the project to start the project 
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Authors
 
-### Making a Progressive Web App
+👤 **Richard Opiyo**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- GitHub: [@richardoppiyo](https://github.com/richardoppiyo)
+- Twitter: [@blessed_ricky](https://twitter.com/blessed_ricky)
+- LinkedIn: [Richard Opiyo](https://linkedin.com/in/richardoppiyo)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Give a ⭐️ if you like this project!
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- To morning session team,reviewers and standup team members.
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
