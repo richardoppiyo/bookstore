@@ -17,7 +17,7 @@ const InputBook = () => (
         placeholder="Author"
         name="title"
       />
-      <button type="button" className="input-submit">Submit</button>
+      <button type="submit" className="input-submit">Submit</button>
     </form>
   </>
 );
