@@ -1,5 +1,5 @@
-const ADD = 'ADD';
-const REMOVE = 'REMOVE';
+const ADD = 'bookStore/books/ADD';
+const REMOVE = 'bookStore/books/REMOVE';
 
 const initialState = {
   booksArray: [],
@@ -14,9 +14,7 @@ export default function bookReducer(state = initialState, action) {
       };
     case REMOVE:
       return {
-        ...state,
-        booksArray: [...state.booksArray, action],
-
+        booksArray: [...state.booksArray.filter((book) => book.item_id !== action.item_id)],
       };
     default:
       return state;

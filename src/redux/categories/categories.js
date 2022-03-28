@@ -1,4 +1,4 @@
-const STATUS = 'STATUS';
+const STATUS = 'bookStore/categories/STATUS';
 
 const initialState = {
   categories: [],
