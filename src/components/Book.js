@@ -2,44 +2,29 @@ import React from 'react';
 import './Book.css';
 import { v4 as uuidv4 } from 'uuid';
 // import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 // import InputBook from './InputBook';
+import { remove } from '../redux/books/books';
 
 const Book = () => {
   const books = useSelector((state) => state.book);
+  const dispatch = useDispatch();
   console.log(books);
-
   return (
-    <div className="books">
-      <div className="booksList">
-        <ul className="ul-books">
-          {books.map((book) => (
-            <div key={uuidv4} className="lesson-Panel">
-              <span className="School-of">{book.category}</span>
-              <li className="li-books">{book.title}</li>
-              <div>
-                <button type="button" className="remove-btn">Remove</button>
-              </div>
+    <>
+      <div key={uuidv4} className="book">
+        {books.map((book) => (
+          <>
+            <div key={uuidv4} className="book-holder">
+              <h2>{book.title}</h2>
+              <p>{book.author}</p>
             </div>
-          ))}
-        </ul>
+            <button className="book-button" type="button" onClick={() => dispatch(remove(book.id))}>Delete</button>
+          </>
+        ))}
       </div>
-      {/* <AddBook /> */}
-    </div>
+    </>
   );
-  // return (
-  //   <div className="book">
-  //     {[books].map((book) => (
-  //       <>
-  //         <div key={book.id} className="book-holder">
-  //           <h2>hello</h2>
-  //         </div>
-  //         <button className="book-button" type="button">Delete</button>
-
-  //       </>
-  //     ))}
-  //   </div>
-  // );
 };
 
 // {books.map((book) => (

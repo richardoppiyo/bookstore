@@ -6,7 +6,8 @@ const initialState = [];
 export default function bookReducer(state = initialState, action) {
   switch (action.types) {
     case ADD:
-      return [...state, action.payload];
+      console.log('hello foom Add');
+      return [...state, action.book];
     case REMOVE:
       return [...state.filter((book) => book.item_id !== action.item_id)];
     default:
@@ -14,10 +15,10 @@ export default function bookReducer(state = initialState, action) {
   }
 }
 
-export function add(payload) {
+export function add(book) {
   return {
     type: ADD,
-    payload,
+    book,
   };
 }
 
