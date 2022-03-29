@@ -2,10 +2,13 @@ const ADD = 'bookStore/books/ADD';
 const REMOVE = 'bookStore/books/REMOVE';
 
 const initialState = {
-  booksArray: [],
+  booksArray: {
+    title: 'Half of a Yellow Sun',
+    author: 'Chimamanda Adichie',
+  },
 };
 
-export default function bookReducer(state = initialState, action) {
+export default function bookReducer(state = initialState.booksArray, action) {
   switch (action.types) {
     case ADD:
       return {
