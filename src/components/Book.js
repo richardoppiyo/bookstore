@@ -12,7 +12,7 @@ const Book = () => {
   console.log(books);
   return (
     <>
-      <div key={uuidv4} className="book">
+      <div className="book">
         {books.map((book) => (
           <>
             <div key={uuidv4} className="book-holder">

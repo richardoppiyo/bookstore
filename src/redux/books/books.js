@@ -4,12 +4,11 @@ const REMOVE = 'bookStore/books/REMOVE';
 const initialState = [];
 
 export default function bookReducer(state = initialState, action) {
-  switch (action.types) {
+  switch (action.type) {
     case ADD:
-      console.log('hello foom Add');
       return [...state, action.book];
     case REMOVE:
-      return [...state.filter((book) => book.item_id !== action.item_id)];
+      return [...state.filter((book) => book.id !== action.id)];
     default:
       return state;
   }
