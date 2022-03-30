@@ -6,15 +6,16 @@ import { add } from '../redux/books/books';
 
 const InputBook = () => {
   const dispatch = useDispatch();
-  const [title, setTitle] = useState('');
+  const [title, setTitle] = useState('Book Title');
+  const [author, setAuthor] = useState('Author');
 
   const submitBookToStore = (e) => {
     e.preventDefault();
     const newBook = {
       id: uuidv4(),
       title,
+      author,
     };
-    console.log(newBook);
     dispatch(add(newBook));
   };
   return (
@@ -27,15 +28,14 @@ const InputBook = () => {
         <input
           type="text"
           className="input-title"
-          placeholder="Title"
-          name="title"
+          placeholder={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
           type="text"
           className="input-title"
-          placeholder="Author"
-          name="title"
+          placeholder={author}
+          onChange={(e) => setAuthor(e.target.value)}
         />
         <button type="submit" className="input-submit">Submit</button>
       </form>
