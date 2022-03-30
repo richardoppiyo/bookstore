@@ -6,7 +6,7 @@ import InputBook from './InputBook';
 const Books = () => (
   <>
     <Header />
-    <Book title="Half of a Yellow Sun" author="Chimamanda Adichie" />
+    <Book />
     <InputBook />
   </>
 );
