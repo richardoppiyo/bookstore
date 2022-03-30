@@ -15,7 +15,6 @@ export const postBook = async (books) => {
 };
 
 export const deleteBook = async (id) => {
-  console.log('to noe delete');
   await fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/Mw1U4sRoKvmi9GEOKqfn/books/${id}`,
     {
       method: 'DELETE',

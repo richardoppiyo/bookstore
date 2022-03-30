@@ -3,7 +3,6 @@ import { postBook, deleteBook, getBooks } from './booksApi';
 const ADD = 'bookStore/books/ADD';
 const REMOVE = 'bookStore/books/REMOVE';
 const LOAD = 'bookStore/books/LOAD';
-// const URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/Mw1U4sRoKvmi9GEOKqfn/';
 
 const initialState = [];
 
@@ -26,15 +25,6 @@ export const load = (book) => ({
   book,
 });
 
-// export function addtThunk() {
-//   return (dispatch) => {
-//     dispatch({ type: ADD });
-//     return fetch(`${URL}/books/`).then(
-//       (book) => dispatch({ type: ADD, book }),
-//     );
-//   };
-// }
-
 export const displayBooks = () => async (dispatch) => {
   const booksArr = await getBooks();
   const booksTemp = [];
@@ -52,18 +42,14 @@ export const displayBooks = () => async (dispatch) => {
 export function addNewBookApi(book) {
   return async (dispatch) => {
     await postBook(book);
-    // if (esponse.ok) {
     dispatch(add(book));
-    // }
   };
 }
 
 export function deleteBookApi(bookID) {
   return async (dispatch) => {
     await deleteBook(bookID);
-    // if (esponse.ok) {
     dispatch(remove(bookID));
-    // }
   };
 }
 
@@ -72,7 +58,6 @@ export default function bookReducer(state = initialState, action) {
     case ADD:
       return [...state, action.book];
     case REMOVE:
-      console.log(action.id);
       return [...state.filter((book) => book.item_id !== action.id)];
     case LOAD:
       return action.book;

@@ -2,7 +2,6 @@ import { React, useState } from 'react';
 import './InputBook.css';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
-// import { addNewBookApi } from '../redux/books/books';
 import { addNewBookApi } from '../redux/books/books';
 
 const InputBook = () => {
