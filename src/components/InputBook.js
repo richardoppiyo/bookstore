@@ -16,7 +16,6 @@ const InputBook = () => {
       title,
       author,
     };
-    console.log(newBook);
     dispatch(add(newBook));
   };
   return (
