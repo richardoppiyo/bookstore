@@ -11,7 +11,15 @@
 }
 
 .heading {
-  margin-left: 20px;
+  margin-left: 1.5vw;
+  color: #0290ff;
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .lists {
@@ -19,16 +27,29 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-left: 60px;
 }
 
 .list-item {
   text-decoration: none;
-  margin: 0 20px;
+  width: 3.688rem;
+  height: 1rem;
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212
 }
 
 .list-img {
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
-  background-color: aqua;
+  background-color: #e8e8e8;
+  width: 1.813rem;
+  height: 1.813rem;
+  padding: 0.875rem;
+  border: solid 1px #e8e8e8;
+  margin-right: 3vw;
 }

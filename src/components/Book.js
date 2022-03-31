@@ -17,6 +17,7 @@ const Book = () => {
         <React.Fragment key={book.item_id}>
           <div className="book">
             <div className="book-holder">
+              <p>{book.category}</p>
               <h2>{book.title}</h2>
               <p>{book.author}</p>
             </div>
