@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  background-color: #fff;;
 }
 
 .inner-head {
@@ -35,21 +36,23 @@
   width: 3.688rem;
   height: 1rem;
   font-family: Montserrat;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
-  color: #121212
+  color: #121212;
+  margin-right: 10px;
 }
 
 .list-img {
   border-radius: 50%;
-  background-color: #e8e8e8;
+  /* background-color: #e8e8e8; */
   width: 1.813rem;
   height: 1.813rem;
   padding: 0.875rem;
   border: solid 1px #e8e8e8;
   margin-right: 3vw;
+  background-image: url('../logoin.jpeg');
 }

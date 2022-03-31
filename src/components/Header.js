@@ -10,8 +10,8 @@ const Header = () => (
           BOOKSTORE CMS
         </h1>
         <nav className="lists">
-          <Link to="/" className="list-item">Books</Link>
-          <Link to="/categories" className="list-item">Categories</Link>
+          <Link to="/" className="list-item">BOOKS</Link>
+          <Link to="/categories" className="list-item">CATEGORIES</Link>
         </nav>
       </div>
       <img src="../logoin.jpeg" className="list-img" alt="login" />

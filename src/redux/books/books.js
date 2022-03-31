@@ -34,6 +34,7 @@ export const displayBooks = () => async (dispatch) => {
       item_id: id,
       title: booksArr[id][0].title,
       category: booksArr[id][0].category,
+      author: booksArr[id][0].author,
     });
   });
   dispatch(load(booksTemp));

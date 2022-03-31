@@ -3,23 +3,68 @@
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: darkgray;
-  width: 55%;
-  margin: 30px auto 5px auto;
+  height: 10.625rem;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
 .book-holder {
   text-align: left;
   margin: auto 0 auto 40px;
+  width: 50vw;
+  border-right: 2px solid black;
 }
 
 .book-button {
-  height: 70px;
-  width: 20%;
-  margin: auto 30px auto 0;
   border-radius: 50px;
+  width: 11.5rem;
+  height: 4.063rem;
+  margin: 3.75rem 1.75rem 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: #fff;
 }
 
-h2 {
-  width: 170px;
+.topdiv {
+  background-color: #f5f6fa;
+  padding: 70px 0 30px 0;
+}
+
+.category {
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  color: #606060;
+}
+
+.title {
+  height: 1.813rem;
+  font-family: RobotoSlab;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+
+}
+
+.author {
+  height: 1.188rem;
+  font-family: RobotoSlab;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
 }

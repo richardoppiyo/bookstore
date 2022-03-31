@@ -12,20 +12,22 @@ const Book = () => {
   }, []);
 
   return (
-    <>
+    <div className="topdiv">
       {books.map((book) => (
         <React.Fragment key={book.item_id}>
           <div className="book">
             <div className="book-holder">
-              <p>{book.category}</p>
-              <h2>{book.title}</h2>
-              <p>{book.author}</p>
+              <p className="category">{book.category}</p>
+              <h2 className="title">{book.title}</h2>
+              <p className="author">{book.author}</p>
             </div>
-            <button className="book-button" type="button" onClick={() => dispatch(deleteBookApi(book.item_id))}>Delete</button>
+            <div>
+              <button className="book-button" type="button" onClick={() => dispatch(deleteBookApi(book.item_id))}>REMOVE</button>
+            </div>
           </div>
         </React.Fragment>
       ))}
-    </>
+    </div>
   );
 };
 
