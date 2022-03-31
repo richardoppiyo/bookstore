@@ -8,7 +8,7 @@ const Header = () => (
     <header className="headsection">
       <div className="inner-head">
         <h1 className="heading">
-          BOOKSTORE CMS
+          BookStore CMS
         </h1>
         <nav className="lists">
           <Link to="/" className="list-item">BOOKS</Link>
