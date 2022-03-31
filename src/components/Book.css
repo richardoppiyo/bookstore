@@ -1,25 +1,100 @@
-.book {
+.topdiv {
+  background-color: #f5f6fa;
+  padding: 70px 0 30px 0;
+}
+
+.innerdiv {
   display: flex;
   justify-content: space-between;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.book {
+  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  background-color: darkgray;
-  width: 55%;
-  margin: 30px auto 5px auto;
+  height: 10.625rem;
+  border-radius: 4px;
 }
 
 .book-holder {
   text-align: left;
-  margin: auto 0 auto 40px;
 }
 
 .book-button {
-  height: 70px;
-  width: 20%;
-  margin: auto 30px auto 0;
-  border-radius: 50px;
+  width: 11.5rem;
+  height: 2.063rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: #fff;
 }
 
-h2 {
-  width: 170px;
+.category {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  color: #606060;
+}
+
+.title {
+  height: 1.813rem;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.author {
+  height: 1.1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.middle-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.link-items {
+  text-decoration: none;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 0.5px solid black;
+  color: #4386bf;
+}
+
+.link-item3 {
+  text-decoration: none;
+  color: #4386bf;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -190px;
+}
+
+.stat div {
+  margin: 20px;
+}
+
+.moreinfo {
+  border-left: 1px solid;
+  padding-left: 30px;
 }

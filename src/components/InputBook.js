@@ -22,7 +22,7 @@ const InputBook = () => {
     dispatch(addNewBookApi(newBook));
   };
   return (
-    <>
+    <div className="inputdiv">
       <h2 className="textheading">ADD NEW BOOK</h2>
       <form
         className="form-container"
@@ -42,7 +42,7 @@ const InputBook = () => {
         />
         <select
           required
-          className="input-title"
+          className="input-category"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
         >
@@ -52,9 +52,9 @@ const InputBook = () => {
             </option>
           ))}
         </select>
-        <button type="submit" className="input-submit">Submit</button>
+        <button type="submit" className="input-submit">ADD BOOK</button>
       </form>
-    </>
+    </div>
   );
 };
 
