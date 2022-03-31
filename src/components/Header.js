@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { CgProfile } from 'react-icons/cg';
 import './Header.css';
 
 const Header = () => (
@@ -14,7 +15,8 @@ const Header = () => (
           <Link to="/categories" className="list-item">CATEGORIES</Link>
         </nav>
       </div>
-      <img src="../logoin.jpeg" className="list-img" alt="login" />
+      <CgProfile className="list-img" />
+      {/* <img src="../logoin.jpeg" className="list-img" alt="login" /> */}
     </header>
   </>
 );

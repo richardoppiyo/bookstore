@@ -22,16 +22,17 @@ body {
   margin-right: 12px;
   border-radius: 8px;
   color: #fff;
-  background-color: blue;
+  background-color: #0290ff;
 }
 
 .input-category {
   width: 10%;
-  min-height: 90px;
+  min-height: 35px;
   margin-right: 12px;
 }
 
 .inputdiv {
   background-color: #f5f6fa;
   padding: 70px 0 30px 0;
+  text-align: center;
 }

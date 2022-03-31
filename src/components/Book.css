@@ -1,35 +1,34 @@
-.book {
+.topdiv {
+  background-color: #f5f6fa;
+  padding: 70px 0 30px 0;
+}
+
+.innerdiv {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 10.625rem;
   margin: 2.313rem 6.25rem 0;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
   background-color: #fff;
 }
 
+.book {
+  display: flex;
+  flex-direction: column;
+  height: 10.625rem;
+  border-radius: 4px;
+}
+
 .book-holder {
   text-align: left;
-  margin: auto 0 auto 40px;
-  width: 50vw;
-  border-right: 2px solid black;
 }
 
 .book-button {
   width: 11.5rem;
-  height: 4.063rem;
-  margin: 3.75rem 1.75rem 0.563rem 3.688rem;
-  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  height: 2.063rem;
   border-radius: 3px;
   background-color: #0290ff;
   color: #fff;
-}
-
-.topdiv {
-  background-color: #f5f6fa;
-  padding: 70px 0 30px 0;
 }
 
 .category {
@@ -46,7 +45,6 @@
   height: 1.813rem;
   font-size: 1.375rem;
   font-weight: bold;
-  font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.2px;
@@ -54,7 +52,7 @@
 }
 
 .author {
-  height: 1.188rem;
+  height: 1.1rem;
   font-size: 1.1rem;
   font-weight: 500;
   font-stretch: normal;
@@ -62,4 +60,41 @@
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
+}
+
+.middle-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.link-items{
+  text-decoration: none;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 0.5px solid black;
+  color: #4386bf;
+}
+
+.link-item3 {
+  text-decoration: none;
+  color: #4386bf;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -190px;
+}
+
+.stat div {
+  margin: 20px;
+}
+
+.moreinfo {
+  border-left: 1px solid;
+  padding-left: 30px;
 }

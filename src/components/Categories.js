@@ -8,7 +8,7 @@ function Categories() {
   const status = useSelector((state) => state.categ);
   const dispatch = useDispatch();
   return (
-    <div>
+    <div style={{ textAlign: 'center' }}>
       <Header />
       <button className="book-button" type="button" onClick={() => { dispatch(checkStatus()); }}>Check Status</button>
       <p>{status}</p>
